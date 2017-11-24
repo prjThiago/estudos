@@ -29,10 +29,10 @@ async.waterfall([
     
     (arg1, callback) => {
         
-        console.log('function 2');
+        console.log('function 3');
 
         setTimeout(()=> {         
-            console.log('timeout 2');      
+            console.log('timeout 3');      
             callback(null, 'done');
         }, 2000);
 

@@ -9,8 +9,8 @@ async.whilst(
         counter++;
         setTimeout(function() {
             console.log(counter);
-            callback('null', counter);
-        }, 1000);
+            callback(null, counter);
+        }, 10000);
     },
     function (err, n) {
         // 5 seconds have passed, n = 5
